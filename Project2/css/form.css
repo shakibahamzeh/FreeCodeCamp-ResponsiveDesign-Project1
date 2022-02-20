@@ -124,3 +124,58 @@ textarea{
 input:focus ,select:focus ,textarea:focus{
     border: 2px solid rgb(57, 57, 187);
 }
+
+
+
+@media (max-width:720px) {
+    header h1{
+    font-size: 28px;
+    font-weight: 500;
+}
+    header p{
+    font-size: 18px;
+}
+    main{
+    max-width: 550px;
+}
+
+}
+@media (max-width:570px) {
+    header h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+    header p{
+    font-size: 16px;
+}
+    main{
+    max-width: 400px;
+}
+.form-field label, #submit,textarea ,.form-field select , .form-field select option{
+    font-size: 16px;
+}
+.form-field input::placeholder{
+    font-size: 14px;
+}
+}
+
+@media (max-width:425px) {
+    main{
+        max-width: 310px;
+    }
+
+    header h1{
+    font-size: 20px;
+    font-weight: 500;
+}
+    header p{
+    font-size: 14px;
+}
+ 
+   .form-field label, #submit,textarea ,.form-field select , .form-field select option{
+    font-size: 14px;
+}
+   .form-field input::placeholder{
+    font-size: 14px;
+}
+}
