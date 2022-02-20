@@ -6,5 +6,121 @@
 
 
 body{
-    background-color: blueviolet;
+    background: linear-gradient(rgba(44, 44, 44, 0.49), rgb(145, 138, 138)),
+    url("../images/survey-form-background.jpeg") no-repeat 60% fixed;
+    background-size: cover;
+    background-size: cover;
+    font-family: sans-serif;
+    
+}
+
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0 30px 0;
+    color: #ffffff;
+}
+header h1{
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+header p{
+    font-size: 22px;
+}
+main{
+    padding: 30px 20px;
+    margin: 0 auto;
+    max-width: 700px;
+    border-radius: 5px;
+    background-color: rgba(43,42,73,0.69);  
+    backdrop-filter: blur(5px);
+}
+#survey-form{
+    display: flex;
+    flex-direction: column;
+}
+#survey-form .form-field{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.form-field label{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.form-field input{
+    height: 40px;
+    border: transparent;
+    outline: none;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+.form-field input::placeholder{
+    font-size: 16px;
+    color: #555;
+}
+.form-field input[type=number]{
+    padding-right: 10px;
+}
+.form-field select{
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+    border: transparent;
+    padding-right: 10px;
+    padding-left: 5px;
+    font-size: 16px;
+    color: #555;
+}
+.form-field select option{
+    font-size: 16px;
+    color: #555;
+}
+
+.form-field div{
+     display: flex;
+}
+.form-field div label{
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.form-field div input{
+   width: 22px;
+}
+
+textarea{
+    padding: 8px 0 0 5px;
+    font-size: 16px;
+    color: #555;
+    border-radius: 5px;
+    outline: none;
+    border: transparent;
+}
+#submit{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #37af65;
+    transition: all 1s ease;
+}
+#submit:hover{
+   background-color: #378b57;
+}
+input:focus ,select:focus ,textarea:focus{
+    border: 2px solid rgb(57, 57, 187);
 }
